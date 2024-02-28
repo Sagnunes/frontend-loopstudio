@@ -1,59 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link href="./output.css" rel="stylesheet">
+    <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+<main class="min-w-[375px] max-w-[1440px]">
+    <header class="relative">
+        <img src="../images/mobile/image-hero.jpg" alt="hero image mobile">
+        <nav class="absolute top-0 flex flex-row px-6 pt-[40px] justify-between items-center w-full">
+            <img src="../images/logo.svg" alt="logo" class="w-[144px] h-[24px]">
+            <img src="../images/icon-hamburger.svg" alt="logo" class="w-[24px] h-[16px]">
+        </nav>
+        <div class=" absolute flex top-[30%] left-0 border border-white  p-6 leading-[38px] mx-6">
+            <h1 class="text-[40px] text-white font-josefin-sans uppercase">Immersive experiences that deliver</h1>
+        </div>
+    </header>
 
-  Immersive experiences that deliver
+    <section class="bg-white px-6 mt-[96px]">
+        <div class="flex flex-col justify-center items-center">
+            <img src="../images/mobile/image-interactive.jpg" alt="interactive image">
+            <div class="px-6 mt-12">
+                <h4 class="font-josefin-sans font-light text-[32px] leading-[32px] text-black uppercase text-center">The
+                    leader in interactive VR</h4>
+                <p class="font-alata font-light text-[15px] text-center mt-6 leading-[25px] text-black/50 ">
+                    Founded in 2011, Loopstudios has been producing world-class virtual reality
+                    projects for some of the best companies around the globe. Our award-winning
+                    creations have transformed businesses through digital experiences that bind
+                    to their brand.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="px-6 mt-12">
+            <h4 class="font-josefin-sans font-light text-[32px] leading-[32px] text-black uppercase text-center">Our
+                creations</h4>
 
-  The leader in interactive VR
+            <div class="mt-12 grid grid-cols-1 gap-6">
+                <div class="relative">
+                    <img src="../images/mobile/image-deep-earth.jpg" alt="deep earth" class="">
+                    <span class="uppercase text-white w-[80px] h-[48px] absolute bottom-0 font-josefin-sans text-2xl leading-[24px] ml-[20px] mb-[20px]">Deep earth</span>
+                </div>
+                <div class="relative">
+                    <img src="../images/mobile/image-night-arcade.jpg" alt="night arcade" class="">
+                    <span class="uppercase text-white w-[80px] h-[48px] absolute bottom-0 font-josefin-sans text-2xl leading-[24px] ml-[20px] mb-[20px]">Night arcade</span>
+                </div>
+                <div class="relative">
+                    <img src="../images/mobile/image-soccer-team.jpg" alt="soccer team" class="">
+                    <span class="uppercase text-white w-[80px] h-[48px] absolute bottom-0 font-josefin-sans text-2xl leading-[24px] ml-[20px] mb-[20px]">Soccer team VR</span>
+                </div>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+                <div class="relative">
+                    <img src="../images/mobile/image-grid.jpg" alt="grid" class="">
+                    <span class="uppercase text-white w-[80px] h-[48px] absolute bottom-0 font-josefin-sans text-2xl leading-[24px] ml-[20px] mb-[20px]">The Grid</span>
+                </div>
+                <div class="relative">
+                    <img src="../images/mobile/image-from-above.jpg" alt="from above" class="">
+                    <span class="uppercase text-white w-[80px] h-[48px] absolute bottom-0 font-josefin-sans text-2xl leading-[24px] ml-[20px] mb-[20px]">From up above VR</span>
+                </div>
 
-  Our creations
+                <div class="relative">
+                    <img src="../images/mobile/image-pocket-borealis.jpg" alt="pocket borealis" class="">
+                    <span class="uppercase text-white w-[80px] h-[48px] absolute bottom-0 font-josefin-sans text-2xl leading-[24px] ml-[20px] mb-[20px]">Pocket borealis</span>
+                </div>
 
-  See all
+                <div class="relative">
+                    <img src="../images/mobile/image-curiosity.jpg" alt="curiosity" class="">
+                    <span class="uppercase text-white w-[80px] h-[48px] absolute bottom-0 font-josefin-sans text-2xl leading-[24px] ml-[20px] mb-[20px]">The curiosity</span>
+                </div>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+                <div class="relative">
+                    <img src="../images/mobile/image-fisheye.jpg" alt="fisheye" class="">
+                    <span class="uppercase text-white w-[99px] h-[48px] absolute bottom-0 font-josefin-sans text-2xl leading-[24px] ml-[20px] mb-[20px]">Make it fisheye</span>
+                </div>
 
-  About
-  Careers
-  Events
-  Products
-  Support
+                <div class="flex justify-center">
+                    <button class="uppercase text-sm text-black border border-black pl-[38px] pr-[43px] py-[13px] font-alata tracking-[5px] leading-[14px]">
+                        See All
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black flex flex-col justify-center items-center px-[52px] py-[56px] mt-[96px]">
+        <img src="../images/logo.svg" alt="logo" class="w-[144px] h-[24px]">
+        <ul class="flex flex-col text-white mt-8 gap-6 text-center">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+        </ul>
 
-  © 2021 Loopstudios. All rights reserved.
+        <div class="flex flex-row mt-10 gap-x-6 items-center">
+            <img src="../images/icon-facebook.svg" alt="icon facebook" class="size-full">
+            <img src="../images/icon-twitter.svg" alt="icon twitter" class="size-full">
+            <img src="../images/icon-pinterest.svg" alt="icon pinterest" class="size-full">
+            <img src="../images/icon-instagram.svg" alt="icon instagram" class="size-full">
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <p class="text-[15px] leading-[25px] text-white/50 mt-6"> © 2021 Loopstudios. All rights reserved.</p>
+        <div class="attribution mt-6">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/Sagnunes">Sérgio Nunes</a>.
+        </div>
+    </footer>
+</main>
+<!--  About-->
+<!--  Careers-->
+<!--  Events-->
+<!--  Products-->
+<!--  Support-->
+
 </body>
 </html>
