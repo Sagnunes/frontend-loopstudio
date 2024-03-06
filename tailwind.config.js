@@ -2,23 +2,34 @@
 module.exports = {
     content: ["./src/**/*.{html,js}"],
     theme: {
-        extend: {},
-        backgroundImage: {
-            "hero-mobile": "url(../images/mobile/image-hero.jpg)",
-            "hero-desktop": "url(../images/desktop/image-hero.jpg)",
+        screens: {
+            xs: "365px",
+            sm: '640px',
+            md: '768px',
+            lg: "960px",
+            xl: "1160px",
+            '2xl': "1536px",
         },
-        colors: {
-            white: "hsl(0, 0%, 100%)",
-            black: "hsl(0, 0%, 0%)",
-            gray: {
-                dark: "hsl(0, 0%, 55%)",
-                "very-dark": "hsl(0, 0%, 41%)"
-            }
+        extend: {
+            colors: {
+                "dark-gray": "hsl(0, 0%, 55%)",
+                "very-dark-gray": "hsl(0, 0%, 41%)",
+            },
+            fontFamily: {
+                headline: ['"Josefin Sans"', 'sans-serif'],
+                sans: ["Alata", 'sans-serif'],
+            },
+            fontSize: {
+                base: ["0.9375rem", "1.65"],
+            },
+            spacing: {
+                5.5: "1.375rem",
+                7.5: "1.875rem",
+                32.25: "8.0625rem",
+                34: "8.5rem",
+                40.5: "10.125rem",
+            },
         },
-        fontFamily: {
-            "alata": ['Alata', "sans-serif"],
-            "josefin-sans": ["Josefin Sans", "sans-serif"]
-        }
     },
     plugins: [],
 }
